@@ -1,0 +1,10 @@
+A C program which is a own static library for dynamic allocation using freelists. The library allocates (i.e., malloc) and deallocates (i.e., free).
+It does not have support growing the “heap” if out of memory (default mmap). The first Fit strategy for selection is used to allocate the memory.
+It contains a sample main program which makes use of the library to allocate and deallocate space.(A sample demo of how to use the library)
+It works in all Linux/Unix based system which supports mmap system call.
+
+comamnds to run the my_main.c
+
+make clean
+make main
+make

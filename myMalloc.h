@@ -5,5 +5,6 @@
 void printFreeList();
 void* myMalloc(unsigned int size);
 void myFree(void* address);
+void unMap();
 
 #endif

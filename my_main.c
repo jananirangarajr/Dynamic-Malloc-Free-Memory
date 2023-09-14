@@ -48,5 +48,7 @@ int main() {
     printf("After allocation of char type of size %lu bytes + header 16 bytes\n",sizeof(char));
     printFreeList();
 
+    unMap();
+
     return 0;
 }

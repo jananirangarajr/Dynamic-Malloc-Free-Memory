@@ -34,7 +34,7 @@ void* initializeMemory()
     head = memory;
     head->size = size_in_bytes-sizeof(struct freeList);
     head->next = NULL;
-    printf("After allocating freeList node, available size: %d address %p\n",head->size,head);
+    printf("After allocating freeList node, available size: %d\n",head->size);
     return memory;
 }
 /**
@@ -127,7 +127,7 @@ void printFreeList() {
     struct freeList *node = head;
     printf("Free List:\n");
     while(node != NULL) {
-        printf("%d(bytes) \n",node->size);
+        printf("%d(bytes), start Address %p\n",node->size,node+sizeof(struct freeList));
         node = node->next;
     }
 }
